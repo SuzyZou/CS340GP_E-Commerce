@@ -6,7 +6,6 @@
 
 h1{
   text-align: center;
-  display: flex;
   align-items: center;
   background-color: #167bd3e7;
   padding: 10px;
@@ -14,10 +13,12 @@ h1{
 }
 
 h1 {
-  color: rgba(230, 78, 8, 0.935);
+  color: black;
   margin: 0;
   padding: 25px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Tektur', cursive;
+  font-style: italic;
+  font-size: 50px;
 }
 
 i{
@@ -32,11 +33,11 @@ a{
 }
 
   a:hover, a:focus {
-    color: #7b9bc1;
+    color: #167bd3e7;
   }
   
   a:focus {
-    outline: #152133;
+    outline:  #167bd3e7;
   }
   
  
@@ -142,11 +143,26 @@ nav ul li ul{
 
 
 footer {
-  background-color:#263859;
-  color: #ffffff;
+  background-color: #167bd3e7;
+  color:black;
   text-align: center;
   padding: 10px;
   position: fixed;
   bottom: 0;
   width: 100%;
 }
+
+img.OSU_symbol{
+   position: relative;
+   bottom:500px;
+   left: 580px;
+}
+
+.introDatabase{
+  position: relative;
+  top: 30px;
+  right: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
