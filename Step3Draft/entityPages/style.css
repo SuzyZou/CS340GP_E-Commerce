@@ -1,0 +1,249 @@
+/* Body and header styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font: weight 900px;
+}
+
+
+/* Navigation styles */
+nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+
+nav a:hover {
+  background-color: rgba(48, 12, 226, 0.862);
+  color: #fff;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #0ad7c34c;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #12c8d1;
+}
+
+/* Link styles inside the table */
+td a {
+  text-decoration: none;
+  color: #333;
+}
+
+td a:hover {
+  color: #0066cc;
+}
+
+/* this is for the display all form */
+#browse {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#browse a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+
+/* Rest of the styles... */
+
+/* Button styles */
+nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 0 5px;
+  color: #fff;
+  background-color:  #263859;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+
+
+
+/* Body and header styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #585e5b2a;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Navigation styles */
+nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  color: rgba(229, 223, 223, 0.92);
+  border: #263859;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #0066cc;
+  color: #fff;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e6e6e6;
+}
+
+/* Link styles inside the table */
+td a {
+  text-decoration: none;
+  color: #333;
+}
+
+td a:hover {
+  color: #0066cc;
+}
+
+/* Additional styles */
+#browse {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#browse a {
+  text-decoration: none;
+  color: #0066cc;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 0 5px;
+  color: #fff;
+  background-color:  #263859;
+  border-radius: 5px;
+}
+
+/* Form styles */
+#insert {
+  margin: 20px auto;
+  width: 400px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+#update {
+  margin: 20px auto;
+  width: 400px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#delete {
+  margin: 20px auto;
+  width: 400px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+
+legend {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.fields label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.fields input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 8px 15px;
+  background-color: #263859;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn.cancel {
+  background-color: #ccc;
+  margin-left: 10px;
+}
+
+.btn:hover {
+  background-color: rgba(11, 129, 139, 0.678);
+}
+
+
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<title>Orders</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript">
+  function showform(dowhat) {
+    /*
+    * four DIVS: browse, insert, update, delete
+    * this function sets one visible the others not
+    */
+    if (dowhat == 'insert'){
+      document.getElementById('browse').style.display = 'none';
+      document.getElementById('insert').style.display = 'block';
+      document.getElementById('update').style.display = 'none';
+      document.getElementById('delete').style.display = 'none';
+    }
+    else if (dowhat == 'update'){
+      document.getElementById('browse').style.display = 'none';
+      document.getElementById('insert').style.display = 'none';
+      document.getElementById('update').style.display = 'block';
+      document.getElementById('delete').style.display = 'none';
+    }
+    else if (dowhat == 'delete'){
+      document.getElementById('browse').style.display = 'none';
+      document.getElementById('insert').style.display = 'none';
+      document.getElementById('update').style.display = 'none';
+      document.getElementById('delete').style.display = 'block';
+    }
+    else if (dowhat == 'all'){
+      document.getElementById('browse').style.display = 'block';
+      document.getElementById('insert').style.display = 'block';
+      document.getElementById('update').style.display = 'block';
+      document.getElementById('delete').style.display = 'block';
+    }
+    else { //by default display browse
+      document.getElementById('browse').style.display = 'block';
+      document.getElementById('insert').style.display = 'none';
+      document.getElementById('update').style.display = 'none';
+      document.getElementById('delete').style.display = 'none';
+    }
+  }
+  function newPerson() { showform('insert'); }
+  function updatePerson(pid) { showform('update'); }
+  function deletePerson(pid) { showform ('delete'); }
+  function browsePeople() { showform ('browse'); }
+  function showAll() { showform ('all'); }
+</script>
+</head>
+
+
+<body onload="browsePeople()">
+  <h1> Orders</h1>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="customers.html">Customers</a>
+    <a href="orders.html">Orders</a>
+    <a href="items.html">Items</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="categories.html">Categories</a>
+  </nav>
+  <div id="browse">
+<p><a href="#" onClick="showAll()">Display all forms</a> </p>
+<table border="1" cellpadding="5">
+  <tr>
+    <th><a href="#" onClick="newPerson()">New</a></th>
+    <th></th>
+    <th>OrderID</th>
+    <th>customerID</th>
+    <th>orderDate</th>
+    <th>creditCardNumb</th>
+    <th>creditCardExpDate</th>
+    <th>NumbOrderedItems</th>
+    <th>pricePaid</th>
+  </tr>
+  <tr>
+    <td><a href="#" onClick="updatePerson('this.personID')">Edit</a></td>
+    <td><a href="#" onclick="deletePerson('this.personID')">Delete</a></td>
+    <td align="right" >10000</td>
+    <td align="right" >1000</td>
+    <td align="right" >2019-02-02</td>
+    <td align="right" >1234567</td>
+    <td align="right" >2021-02-16</td>
+    <td align="right" >2</td>
+    <td align="right" >1628</td>
+  </tr>
+  <tr>
+    <td><a href="#" onClick="updatePerson('this.personID')">Edit</a></td>
+    <td><a href="#" onclick="deletePerson('this.personID')">Delete</a></td>
+    <td align="right" >10001</td>
+    <td align="right" >1001</td>
+    <td align="right" >2018-10-12</td>
+    <td align="right" >1234568</td>
+    <td align="right" >2023-04-13</td>
+    <td align="right" >1</td>
+    <td align="right" >629</td>
+  </tr>
+  <tr>
+    <td><a href="#" onClick="updatePerson('this.personID')">Edit</a></td>
+    <td><a href="#" onclick="deletePerson('this.personID')">Delete</a></td>
+    <td align="right" >10002</td>
+    <td align="right" >1002</td>
+    <td align="right" >2017-02-15</td>
+    <td align="right" >1234569</td>
+    <td align="right" >2021-09-07</td>
+    <td align="right" >1</td>
+    <td align="right" >729</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</div> 
+
+<div id="insert">
+  <form method="POST" id="addPlanet">
+      <legend><strong>Add Order</strong></legend>
+        <fieldset class="fields">
+          <label> orderDate </label> <input type="text" name="firstName">
+          <label> creditCardNumb </label> <input type="text" name="lname">
+          <label> creditCardExpNumb </label> <input type="text" name="emailaddr">
+          <label> NumbOrderedItems </label> <input type="text" name="address">
+          <label> pricePaid </label> <input type="text" name="city">
+    </fieldset>
+        <input class="btn" type="submit" id="addPerson" value="Add Order">
+        <input class="btn" type="button" value="cancel" onClick="browsePeople()">
+</form> 
+</div><!-- insert -->
+
+<!-- this section is for update a customer  -->
+<div id="update">
+  <form method="POST" id="addPlanet">
+      <legend><strong>Update Order</strong></legend>
+        <fieldset class="fields">
+          <label> orderDate </label> <input type="text" name="firstName">
+          <label> creditCardNumb </label> <input type="text" name="lname">
+          <label> creditCardExpNumb </label> <input type="text" name="emailaddr">
+          <label> NumbOrderedItems </label> <input type="text" name="address">
+          <label> pricePaid </label> <input type="text" name="city">
+    </fieldset>
+        <input class="btn" type="submit" id="addPerson" value="Update Order">
+        <input class="btn" type="button" value="cancel" onClick="browsePeople()">
+</form> 
+</div><!-- insert -->
+
+<!-- this  is for delete a person -->
+<div id="delete" style="display: block">
+  <form method="POST" id="deletePerson">
+      <legend><strong>Delete Order</strong></legend>
+          <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+          <input type="hidden" name="personID" id="deletepersonID" value="1">
+          <label><strong>OrderID:</strong></label> 10000
+            <label> <strong>pricePaid</strong> </label> 1628
+            
+    </fieldset>
+    <input class="btn" type="submit" id="DeletePerson" value="Delete Order">
+          <input class="btn" type="button" value="cancel" onClick="browsePeople()">
+  </form> 
+</div><!-- delete -->
+
+
+
+</body>
+
+
+
+</html>
