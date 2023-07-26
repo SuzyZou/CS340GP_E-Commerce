@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: #167bd3e7;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  color: rgba(230, 78, 8, 0.935);
+  margin: 0;
+  padding: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+i{
+    color: #c9d2e9;
+}
+
+a{
+    text-decoration: none;
+    color: #c9d2e9;
+    margin: 15px;
+
+}
+
+  a:hover, a:focus {
+    color: #7b9bc1;
+  }
+  
+  a:focus {
+    outline: #152133;
+  }
+  
+ 
+
+
+  .logo{
+    position:absolute;
+    left: 10px;
+    top: 10px;
+
+  }
+ 
+  
+  .navbar{
+    background-color: #263859;
+    width: 100%;
+    height: 36px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+  .navlist {
+    padding: 0;
+    position: relative;
+    left: 75px;
+    top: 10px;
+  }
+  
+ 
+  li{
+    list-style: none;
+  }
+  .add_item_link{
+    float: left;
+    list-style: none;
+  }
+
+  .add_order_link{
+    float: left;
+    list-style: none;
+  }
+  
+  .home{
+    float: left;
+    list-style: none;
+}
+
+.data_base_photo{
+    width: 440px;
+    height: 500px;
+
+}
+.photo-container{
+    margin-top: 10px;
+    border-style:solid;
+    border-color: #263859;
+    border-width: 5px;
+    width: 440px;
+    height: 500px;
+}
+nav li ul a{
+    padding-top: 10px;
+    left: 500px;
+}
+
+nav ul li ul{
+    display: block;
+    position: absolute;
+    background-color: #101112d1;
+    padding: 22px 18px;
+    width: 45px;
+}
+.main-text{
+    position: absolute;
+    left: 650px;
+    top:150px;
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.major{
+    font-size: 50px;
+}
+.GPA{
+    font-size: 50px;
+}
+
+.college1{
+    font-size: 50px;
+    font-weight: 900;
+    color: rgba(230, 78, 8, 0.935);
+    position: relative;
+    right: 20px;
+}
+
+.college2{
+  font-size: 50px;
+  font-weight: 900;
+  right: 50px;
+  position: relative;
+}
+
+
+footer {
+  background-color:#263859;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
