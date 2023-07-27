@@ -70,7 +70,7 @@
     <th></th>
     <th>reviewID</th>
     <th>customerID</th>
-    <th>overllRating</th>
+    <th>overallRating</th>
     <th>feedback</th>
    
   </tr>
@@ -112,7 +112,7 @@
           <label> feedback </label> <input type="text" name="lname">
         
     </fieldset>
-        <input class="btn" type="submit" id="addPerson" value="Add Person">
+        <input class="btn" type="submit" id="addPerson" value="Add Review">
         <input class="btn" type="button" value="cancel" onClick="browsePeople()">
 </form> 
 </div><!-- insert -->
@@ -120,13 +120,13 @@
 <!-- this section is for update a customer  -->
 <div id="update">
   <form method="POST" id="addPlanet">
-      <legend><strong>Update Order</strong></legend>
+      <legend><strong>Update Review</strong></legend>
         <fieldset class="fields">
           <label> customerID </label> <input type="text" name="firstName">
           <label> overall Rating </label> <input type="text" name="firstName">
           <label> feedback </label> <input type="text" name="lname">
     </fieldset>
-        <input class="btn" type="submit" id="addPerson" value="Update Customer">
+        <input class="btn" type="submit" id="addPerson" value="Update Review">
         <input class="btn" type="button" value="cancel" onClick="browsePeople()">
 </form> 
 </div><!-- insert -->
@@ -134,15 +134,15 @@
 <!-- this  is for delete a person -->
 <div id="delete" style="display: block">
   <form method="POST" id="deletePerson">
-      <legend><strong>Delete Order</strong></legend>
+      <legend><strong>Delete Review</strong></legend>
           <fieldset class="fields">
           <p>Are you sure you wish to delete the following?</p>
           <input type="hidden" name="personID" id="deletepersonID" value="1">
-          <label><strong>ID:</strong></label> 1000
+          <label><strong>reviewID:</strong></label> 1000
             <label> <strong>Name</strong> </label> Jack Spring
             
     </fieldset>
-    <input class="btn" type="submit" id="DeletePerson" value="Delete Person">
+    <input class="btn" type="submit" id="DeletePerson" value="Delete Review">
           <input class="btn" type="button" value="cancel" onClick="browsePeople()">
   </form> 
 </div><!-- delete -->
