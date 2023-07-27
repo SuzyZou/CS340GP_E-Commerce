@@ -253,6 +253,8 @@ legend {
   color:#EBEDF0;
   padding: 15px 32px;
   text-align: center;
+  font-family: 'Tektur', cursive;
+  font-style: italic;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
@@ -276,6 +278,7 @@ legend {
     position: absolute;
     width: 650px;
     height: 500px;
+
     margin-top: 10px;
     border-style:solid;
     border-color: #303F61;
