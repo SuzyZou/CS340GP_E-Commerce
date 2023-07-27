@@ -1,13 +1,13 @@
 /* Body and header styles */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Tektur', cursive;
   margin: 20px;
   padding: 0;
 }
 
 h1 {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Tektur', cursive;
   font: weight 900px;
 }
 
@@ -97,7 +97,7 @@ nav a:hover {
 
 /* Body and header styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Tektur', cursive;
   margin: 20px;
   padding: 0;
   background-color: #585e5b2a;
@@ -155,6 +155,7 @@ tr:hover {
 td a {
   text-decoration: none;
   color: #333;
+  font-family: 'Tektur', cursive;
 }
 
 td a:hover {
@@ -234,6 +235,7 @@ legend {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-family: 'Tektur', cursive;
 }
 
 .btn.cancel {
