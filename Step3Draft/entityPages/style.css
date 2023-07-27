@@ -245,5 +245,46 @@ legend {
   background-color: rgba(11, 129, 139, 0.678);
 }
 
+.button{
+  border: none;
+  background-color: #303F61;
+  color:#EBEDF0;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+  
+  .button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    ;
+  }
+  
+  .home_button_container{
+    position: absolute;
+    left: 55%;
+    top:10%;
+    
+  }
+
+  .schema_container{
+    position: absolute;
+    width: 650px;
+    height: 500px;
+    margin-top: 10px;
+    border-style:solid;
+    border-color: #303F61;
+    border-width: 5px;
+  }
+
+  .schema_img{
+    width: 650px;
+    height: 500px;
+  }
+  
+  
 
 

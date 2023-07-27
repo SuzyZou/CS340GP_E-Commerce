@@ -7,13 +7,13 @@
 h1{
   text-align: center;
   align-items: center;
-  background-color: #167bd3e7;
+  background-color: #303F61;
   padding: 10px;
   text-align: center;
 }
 
 h1 {
-  color: black;
+  color: #EBEDF0;
   margin: 0;
   padding: 25px;
   font-family: 'Tektur', cursive;
@@ -27,7 +27,7 @@ i{
 
 a{
     text-decoration: none;
-    color: #c9d2e9;
+    color: #EBEDF0;
     margin: 15px;
 
 }
@@ -52,7 +52,7 @@ a{
  
   
   .navbar{
-    background-color: #263859;
+    background-color:   #94A4B4;
     width: 100%;
     height: 36px;
     font-size: 15px;
@@ -94,7 +94,7 @@ a{
 .photo-container{
     margin-top: 10px;
     border-style:solid;
-    border-color: #263859;
+    border-color: #303F61;
     border-width: 5px;
     width: 440px;
     height: 500px;
@@ -107,14 +107,14 @@ nav li ul a{
 nav ul li ul{
     display: block;
     position: absolute;
-    background-color: #101112d1;
+    background-color:  #EBEDF0;
     padding: 22px 18px;
     width: 45px;
 }
 .main-text{
     position: absolute;
     left: 650px;
-    top:150px;
+    top: 150px;
     text-align: center;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -143,19 +143,19 @@ nav ul li ul{
 
 
 footer {
-  background-color: #167bd3e7;
-  color:black;
+  background-color:  #94A4B4;
+  color:#EBEDF0;
   text-align: center;
   padding: 10px;
-  position: fixed;
+  position:fixed;
   bottom: 0;
   width: 100%;
 }
 
 img.OSU_symbol{
    position: relative;
-   bottom:528px;
-   left: 610px;
+   bottom:500px;
+   left: 600px;
 }
 
 .introDatabase{
@@ -164,5 +164,28 @@ img.OSU_symbol{
   right: 40px;
   font-family: Arial, Helvetica, sans-serif;
 }
+.button{
+border: none;
+background-color: #303F61;
+color:#EBEDF0;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
 
+.button:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  ;
+}
+
+.schema_button_container{
+  position: absolute;
+  left: 800px;
+  top:85%;
+  
+}
 
