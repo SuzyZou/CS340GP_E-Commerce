@@ -20,6 +20,13 @@
       document.getElementById('update').style.display = 'none';
       document.getElementById('delete').style.display = 'none';
     }
+    else if (dowhat == "search"){
+      document.getElementById('browse').style.display = 'none';
+      document.getElementById('insert').style.display = 'none';
+      document.getElementById('search').style.display = 'block';
+      document.getElementById('update').style.display = 'none';
+      document.getElementById('delete').style.display = 'none';
+    }
     else if (dowhat == 'update'){
       document.getElementById('browse').style.display = 'none';
       document.getElementById('insert').style.display = 'none';
@@ -40,12 +47,14 @@
     }
     else { //by default display browse
       document.getElementById('browse').style.display = 'block';
+      document.getElementById('search').style.display = 'none';
       document.getElementById('insert').style.display = 'none';
       document.getElementById('update').style.display = 'none';
       document.getElementById('delete').style.display = 'none';
     }
   }
   function newPerson() { showform('insert'); }
+  function searchOrder() { showform('search'); }
   function updatePerson(pid) { showform('update'); }
   function deletePerson(pid) { showform ('delete'); }
   function browsePeople() { showform ('browse'); }
@@ -80,7 +89,7 @@
 <table border="1" cellpadding="5">
   <tr>
     <th><a href="#" onClick="newPerson()">New</a></th>
-    <th></th>
+    <th><a href= '#' onClick = "searchOrder()">Search</a></th>
     <th>OrderID</th>
     <th>customerID</th>
     <th>orderDate</th>
@@ -161,6 +170,22 @@
         <input class="btn" type="button" value="cancel" onClick="browsePeople()">
 </form> 
 </div><!-- insert -->
+
+<!--this is for search -->
+<div id="search">
+  <form method="POST" id="addPlanet">
+      <legend><strong>Search Order</strong></legend>
+        <fieldset class="fields">
+          <label> OrderID </label> <input type="text" name="firstName">      
+       </fieldset>
+        <input class="btn" type="submit" id="addPerson" value="Search Order">
+        <input class="btn" type="button" value="cancel" onClick="browsePeople()">
+  </form> 
+</div>
+
+
+
+
 
 <!-- this section is for update a customer  -->
 <div id="update">

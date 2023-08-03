@@ -168,10 +168,10 @@ legend {
   font-weight: bold;
 }
 
-.fields {
+fieldset.fields {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
+  flex-direction:column;
+  margin: 15px;
 }
 
 .fields label {
