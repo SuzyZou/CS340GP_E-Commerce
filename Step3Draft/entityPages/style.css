@@ -259,6 +259,7 @@ legend {
 
 .dropdown {
   position: relative;
+  top:20px;
   display: inline-block;
 }
 
