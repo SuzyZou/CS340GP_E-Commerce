@@ -1,16 +1,41 @@
-/* Body and header styles */
-body {
+
+
+h1{
+  color: #EBEDF0;
+  text-align: center;
+  align-items: center;
+  background-color: #303F61;
+  padding: 5px;
+  margin: 0;
   font-family: 'Tektur', cursive;
-  margin: 20px;
-  padding: 0;
+  font-style: italic;
+  font-size: 50px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+*{
+  margin: 0;
+  padding:0;
+  font-family: 'Tektur', cursive;
+}
+
+h1{
+text-align: center;
+align-items: center;
+background-color: #303F61;
+padding: 10px;
 }
 
 h1 {
-  text-align: center;
-  font-family:'Tektur', cursive;
-  font: weight 900px;
+color: #EBEDF0;
+margin: 0;
+padding: 25px;
+font-family: 'Tektur', cursive;
+font-style: italic;
+font-size: 50px;
 }
-
 
 /* Navigation styles */
 nav {
@@ -69,7 +94,9 @@ td a:hover {
   color: #0066cc;
 }
 
-
+#browse a:hover{
+  background-color: #94A4B4;
+}
 /* Rest of the styles... */
 
 /* Button styles */
@@ -98,7 +125,6 @@ nav a:hover {
 /* Body and header styles */
 body {
   font-family: 'Tektur', cursive;
-  margin: 20px;
   padding: 0;
   background-color: #585e5b2a;
 }
@@ -123,14 +149,14 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #0066cc;
+  background-color:  #94A4B4;
   color: #fff;
 }
 
 /* Table styles */
 table {
-  width: 100%;
-  border-collapse: collapse;
+  width: 90%;
+  margin: 30px;
 }
 
 th, td {
@@ -159,7 +185,7 @@ td a {
 }
 
 td a:hover {
-  color: #0066cc;
+  color:  #94A4B4;
 }
 
 /* Additional styles */
@@ -170,7 +196,7 @@ td a:hover {
 
 #browse a {
   text-decoration: none;
-  color: #0066cc;
+  color: #94A4B4;
   text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
@@ -230,7 +256,7 @@ legend {
 
 .btn {
   padding: 8px 15px;
-  background-color: #263859;
+  background-color: #303F61;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -244,7 +270,7 @@ legend {
 }
 
 .btn:hover {
-  background-color: rgba(11, 129, 139, 0.678);
+  background-color: #94A4B4;
 }
 
 .button{
@@ -278,7 +304,6 @@ legend {
     position: absolute;
     width: 650px;
     height: 500px;
-
     margin-top: 10px;
     border-style:solid;
     border-color: #303F61;
@@ -326,6 +351,20 @@ legend {
 .dropdown-content a:hover {background-color: #ddd;}
 .dropdown:hover .dropdown-content {display: block;}
   
-  
+footer {
+  text-align: center;
+  background-color: #303F61;
+  padding: 10px;
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 12px;
+  color: rgb(235, 227, 227);
+}
 
 
