@@ -387,7 +387,6 @@ li{
   background-color: #94A4B4;
 }
 
-.search_bar{
-  position: relative;
-  top: 5px;
+input{
+  padding: 5px;
 }
