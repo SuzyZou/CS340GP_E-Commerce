@@ -76,7 +76,7 @@ CREATE TABLE ordersItems (
     totalNumItems int,
     PRIMARY KEY (orderID, itemID),
     FOREIGN KEY (orderID) REFERENCES Orders(orderID)on delete cascade,
-    FOREIGN KEY (itemID) REFERENCES Items(itemID)on delete cascade
+    FOREIGN KEY (itemID) REFERENCES Items(itemID)on delete set NULL
 );
 
 -- -----------------------------Inserting Values-------------------------------
@@ -96,6 +96,7 @@ VALUES
 
 INSERT INTO Orders (customerID,	orderDate,	creditCardNumb,	creditCardExpDate,numOrderedItems,pricePaid) 
 VALUES
+    ((SELECT CustomerID FROM Customers WHERE firstName = 'Jack' AND lastName = 'Spring'),'2019-02-02', 1234567, '2021-02-16',2, 1628),
     ((SELECT CustomerID FROM Customers WHERE firstName = 'Jack' AND lastName = 'Spring'),'2019-02-02', 1234567, '2021-02-16',2, 1628),
     ((SELECT CustomerID FROM Customers WHERE firstName = 'Alice' AND lastName = 'Summer'),'2018-10-12', 1234568, '2023-04-13',1, 629),
     ((SELECT CustomerID FROM Customers WHERE firstName = 'Iris' AND lastName = 'Winter'),'2017-02-15', 1234569, '2021-09-07',1, 729);
@@ -123,6 +124,8 @@ INSERT INTO ordersItems(orderID, itemID, totalNumItems)
 VALUES
     ((SELECT orderID FROM Orders WHERE creditCardNumb =1234567), 
      (SELECT itemID FROM Items WHERE itemName = 'laptop'), 43),
+    ((SELECT orderID FROM Orders WHERE creditCardNumb =1234568),
+     (SELECT itemID FROM Items WHERE itemName = 'ipad'), 56),
     ((SELECT orderID FROM Orders WHERE creditCardNumb =1234568),
      (SELECT itemID FROM Items WHERE itemName = 'ipad'), 56),
     ((SELECT orderID FROM Orders WHERE creditCardNumb =1234569),
