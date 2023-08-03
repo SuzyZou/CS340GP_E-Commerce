@@ -69,7 +69,7 @@ WHERE customerID = :customerID_input_dropdown;
 
 update Customers
 set address = :address_input
-where customerID  = :customerID_input_dropdown
+where customerID  = :customerID_input_dropdown;
 
 
 #filter Reviews
@@ -77,7 +77,7 @@ where customerID  = :customerID_input_dropdown
 select * from Reviews 
 where overallRating >= :overallRating_input_dropdown
 and
-overallRating < (:overallRating_input_dropdown + 1)
+overallRating < (:overallRating_input_dropdown + 1);
 
 
 
