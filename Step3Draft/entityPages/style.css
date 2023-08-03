@@ -350,7 +350,8 @@ legend {
 
 .dropdown-content a:hover {background-color: #ddd;}
 .dropdown:hover .dropdown-content {display: block;}
-  
+
+/* all of  footers in  */
 footer {
   text-align: center;
   background-color: #303F61;

@@ -114,7 +114,7 @@
 </div><!-- insert -->
 
 <!-- this section is for update a customer  -->
-<div id="update">
+<!-- <div id="update">
   <form method="POST" id="addPlanet">
       <legend><strong>Update Category</strong></legend>
         <fieldset class="fields">
@@ -124,7 +124,7 @@
         <input class="btn" type="submit" id="addPerson" value="Update Category">
         <input class="btn" type="button" value="cancel" onClick="browsePeople()">
 </form> 
-</div><!-- insert -->
+</div> -->
 
 <!-- this  is for delete a person -->
 <div id="delete" style="display: block">
@@ -133,8 +133,13 @@
           <fieldset class="fields">
           <p>Are you sure you wish to delete the following?</p>
           <input type="hidden" name="personID" id="deletepersonID" value="1">
-          <label><strong>CategoryID:</strong></label> 1000
-            <label> <strong>CategoryName</strong> </label> Phones
+          <label><strong>categoryName:</strong> <select name ="customerID">
+            <option value="0">&nbsp;</option>
+           <option value="1">phones</option>
+           <option value="2">ipads</option>
+           <option value="3">laptops</option>
+         </select>
+     </label> 
             
     </fieldset>
     <input class="btn" type="submit" id="DeletePerson" value="Delete Category">

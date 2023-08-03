@@ -154,8 +154,13 @@
           <fieldset class="fields">
           <p>Are you sure you wish to delete the following?</p>
           <input type="hidden" name="personID" id="deletepersonID" value="1">
-          <label><strong>reviewID:</strong></label> 1000
-            <label> <strong>Name</strong> </label> Jack Spring
+          <label><strong>reviewID:</strong> <select name ="customerID">
+            <option value="0">&nbsp;</option>
+           <option value="1">30</option>
+           <option value="2">31</option>
+           <option value="3">32</option>
+         </select>
+     </label> 
             
     </fieldset>
     <input class="btn" type="submit" id="DeletePerson" value="Delete Review">

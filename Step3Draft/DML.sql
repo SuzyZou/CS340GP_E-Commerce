@@ -1,14 +1,34 @@
-#To continue the example from above, if you have 5 tables in your schema, then at a minimum, we expect you to implement 5 SELECTs, 5 INSERTs, 1 UPDATE (M:N), 1 DELETE (M:N; causing no data anomalies), 1 NULLable relationship, and 1 Search/Dynamic for a total of 14 functions.
+-- To continue the example from above, if you have 5 tables in your schema, then at a minimum, we expect you to implement 5 SELECTs, 5 INSERTs, 1 UPDATE (M:N), 1 DELETE (M:N; causing no data anomalies), 1 NULLable relationship, and 1 Search/Dynamic for a total of 14 functions.
 
-#categories, cutstomers, Items, Orders, Reviews
-#do select statements
-SELECT firstName, lastName from Customers where customerID = :selected_customer_id;
-SELECT categoryName from Categories where categoryID = :selected_category_id;
-SELECT itemName, price from Items where itemID = :selected_item_id;
-SELECT orderDate, numOrderedItems, pricePaid from Orders where orderID = :selected_order_id;
-SELECT overallRating, feedback from Reviews where reviewID = :selected_review_id;
+-- Our tables:  categories, cutstomers, Items, Orders, Reviews
 
-#insert statements
+
+-- --------------------------------------------------------------------------------------------
+-- ---------------------------------Select Statements------------------------------------------
+SELECT firstName, lastName 
+FROM Customers 
+Where customerID = :selected_customer_id;
+
+SELECT categoryName 
+FROM Categories 
+WHERE categoryID = :selected_category_id;
+
+SELECT itemName, price 
+FROM Items 
+WHERE itemID = :selected_item_id;
+
+SELECT orderDate, numOrderedItems, pricePaid 
+FROM Orders 
+WHERE orderID = :selected_order_id;
+
+SELECT overallRating, feedback 
+FROM Reviews 
+WHERE reviewID = :selected_review_id;
+
+
+-- --------------------------------------------------------------------------------------------
+-- ---------------------------------Insert  Statements------------------------------------------
+
 INSERT INTO Customers(lastName, firstName, emailAddress, address, city)
 VALUES
 (:lastName_input, :firstName_input, :emailAddress_input, :address_input, :city_input);
@@ -29,7 +49,8 @@ INSERT into Reviews(customerID, overallRating, feedback)
 VALUES
 (:customerID_input_dropdown, overallRating_input, feedback_input);
 
-#delete
+-- --------------------------------------------------------------------------------------------
+-- ---------------------------------Delete Statements------------------------------------------
 
 DELETE from Items where itemName = :itemName_input;
 Update orderItems
@@ -40,12 +61,17 @@ DELETE FROM Categories
 WHERE categoryID = :categoryID_input_dropdown;
 
 DELETE FROM Customers
-where customerID = :customerID_input_dropdown;
+WHERE customerID = :customerID_input_dropdown;
 
-#update customers address
+
+-- --------------------------------------------------------------------------------------------
+-- -----------------------------Update  Statements---------------------------------------------
+
 update Customers
 set address = :address_input
 where customerID  = :customerID_input_dropdown
+
+
 
 
 

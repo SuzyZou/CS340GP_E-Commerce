@@ -129,11 +129,12 @@
   <form method="POST" id="addPlanet">
       <legend><strong>Add Order</strong></legend>
         <fieldset class="fields">
-          <label> orderDate </label> <input type="text" name="firstName">
-          <label> creditCardNumb </label> <input type="text" name="lname">
-          <label> creditCardExpNumb </label> <input type="text" name="emailaddr">
-          <label> NumbOrderedItems </label> <input type="text" name="address">
-          <label> pricePaid </label> <input type="text" name="city">
+          <label> customer ID </label> <input type="text" name="customerID">
+          <label for = 'orderDate'> Order date: </label> <input type="date"name="firstName">
+          <label> Credit card number </label> <input type="text" name="lname">
+          <label for = 'orderDate'> Credit card expire date </label> <input type="date"name="firstName">
+          <label> Number of Ordered Items </label> <input type="text" name="address">
+          <label> Price paid </label> <input type="text" name="city">
     </fieldset>
         <input class="btn" type="submit" id="addPerson" value="Add Order">
         <input class="btn" type="button" value="cancel" onClick="browsePeople()">
@@ -145,7 +146,8 @@
   <form method="POST" id="addPlanet">
       <legend><strong>Update Order</strong></legend>
         <fieldset class="fields">
-          <label> orderDate </label> <input type="text" name="firstName">
+          <label> customer ID </label> <input type="text" name="customerID">
+          <label for = 'birthday'> order Date: </label> <input type="date"name="firstName">
           <label> creditCardNumb </label> <input type="text" name="lname">
           <label> creditCardExpNumb </label> <input type="text" name="emailaddr">
           <label> NumbOrderedItems </label> <input type="text" name="address">
@@ -162,9 +164,12 @@
       <legend><strong>Delete Order</strong></legend>
           <fieldset class="fields">
           <p>Are you sure you wish to delete the following?</p>
-          <input type="hidden" name="personID" id="deletepersonID" value="1">
-          <label><strong>OrderID:</strong></label> 10000
-            <label> <strong>pricePaid</strong> </label> 1628
+          <label><strong>Order ID:</strong> <select name ="customerID">
+            <option value="0">&nbsp;</option>
+           <option value="1">10000</option>
+           <option value="2">10001</option>
+           <option value="3">10002</option>
+         </select>
             
     </fieldset>
     <input class="btn" type="submit" id="DeletePerson" value="Delete Order">

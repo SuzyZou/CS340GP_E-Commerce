@@ -102,7 +102,7 @@
   <tr>
     <td><a href="#" onClick="updatePerson('this.personID')">Edit</a></td>
     <td><a href="#" onclick="deletePerson('this.personID')">Delete</a></td>
-    <td align="right" >1003</td>
+    <td align="right" >1002</td>
     <td >Iris</td>
     <td align="right" >Winter</td>
     <td>IrisWinter@hello.com</td>
@@ -117,6 +117,7 @@
   <form method="POST" id="addPlanet">
       <legend><strong>Add Customer</strong></legend>
         <fieldset class="fields">
+          <label> customer ID </label> <input type="text" name="customerID">
           <label> first name </label> <input type="text" name="firstName">
           <label> last name </label> <input type="text" name="lname">
           <label> email address </label> <input type="text" name="emailaddr">
@@ -133,6 +134,7 @@
   <form method="POST" id="addPlanet">
       <legend><strong>Update Customer</strong></legend>
         <fieldset class="fields">
+          <label> customer ID </label> <input type="text" name="customerID">
           <label> first name </label> <input type="text" name="firstName">
           <label> last name </label> <input type="text" name="lname">
           <label> email address </label> <input type="text" name="emailaddr">
@@ -151,8 +153,13 @@
           <fieldset class="fields">
           <p>Are you sure you wish to delete the following?</p>
           <input type="hidden" name="personID" id="deletepersonID" value="1">
-          <label><strong>CustomerID:</strong></label> 1000
-            <label> <strong>Name</strong> </label> Jack Spring
+          <label><strong>CustomerID:</strong> <select name ="customerID">
+                 <option value="0">&nbsp;</option>
+                <option value="1">1000</option>
+                <option value="2">1001</option>
+                <option value="3">1002</option>
+              </select>
+          </label> 
             
     </fieldset>
     <input class="btn" type="submit" id="DeletePerson" value="Delete Customer">

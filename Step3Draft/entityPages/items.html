@@ -83,7 +83,7 @@
     <td align="right" >30</td>
     <td align="right" >500</td>
     <td align="right" >ipad</td>
-    <td align="right" >729</td>
+    <td align="right" >$729</td>
   </tr>
   <tr>
     <td><a href="#" onClick="updatePerson('this.personID')">Edit</a></td>
@@ -92,7 +92,7 @@
     <td align="right" >32</td>
     <td align="right" >501</td>
     <td align="right" >phone</td>
-    <td align="right" >629</td>
+    <td align="right" >$629</td>
 
   </tr>
   <tr>
@@ -102,7 +102,7 @@
     <td align="right" >31</td>
     <td align="right" >502</td>
     <td align="right" >laptop</td>
-    <td align="right" >999</td>
+    <td align="right" >$999</td>
   </tr>
 </table>
 <p>&nbsp;</p>
@@ -112,8 +112,9 @@
   <form method="POST" id="addPlanet">
       <legend><strong>Add Item</strong></legend>
         <fieldset class="fields">
-          <label> itemName </label> <input type="text" name="firstName">
-          <label> price</label> <input type="text" name="lname">
+          <label> reviewID </label> <input type="text" name="reviewID">
+          <label> itemName </label> <input type="text" name="itemName">
+          <label> price</label> <input type="text" name="price">
     </fieldset>
         <input class="btn" type="submit" id="addPerson" value="Add Item">
         <input class="btn" type="button" value="cancel" onClick="browsePeople()">
@@ -125,7 +126,14 @@
   <form method="POST" id="addPlanet">
       <legend><strong>Update Item</strong></legend>
         <fieldset class="fields">
-          <label> itemName </label> <input type="text" name="firstName">
+          <label> reviewID </label> <input type="text" name="reviewID">
+          <label><strong>itemName:</strong> <select name ="customerID">
+            <option value="0">&nbsp;</option>
+           <option value="1">ipads</option>
+           <option value="2">phones</option>
+           <option value="3">laptops</option>
+         </select>
+     </label> 
           <label> price</label> <input type="text" name="lname">
     </fieldset>
         <input class="btn" type="submit" id="addPerson" value="Update Item">
@@ -140,8 +148,13 @@
           <fieldset class="fields">
           <p>Are you sure you wish to delete the following?</p>
           <input type="hidden" name="personID" id="deletepersonID" value="1">
-          <label><strong>ItemID:</strong></label> 1
-            <label> <strong>ItemName</strong> </label> Ipad
+          <label><strong>Item ID:</strong> <select name ="customerID">
+            <option value="0">&nbsp;</option>
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+         </select>
+     </label> 
             
     </fieldset>
     <input class="btn" type="submit" id="DeletePerson" value="Delete Item">
