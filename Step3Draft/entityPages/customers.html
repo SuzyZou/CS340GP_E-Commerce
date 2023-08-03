@@ -67,56 +67,60 @@
             <li class = "add_order_link"><a href = "./reviews.html">Reviews</a></li>
             <li class = "add_order_link"><a href = "./categories.html">Categories</a></li>
         </ul>
+
     </nav>
   </head>
+  
+
+  <div class="button-container">
+    <a href="#" id="displayAllForms" onClick="showAll()" class="circular-button">All Forms</a>
+  </div>
 
   <div id="browse">
-<p> <a href="#" onClick="showAll()">Display all forms</a> 
-</p>
-<table border="1" cellpadding="5">
-  <tr>
-    <th><a href="#" onClick="newPerson()">New</a></th>
-    <th></th>
-    <th>customerID</th>
-    <th>firstName</th>
-    <th>lastName</th>
-    <th>emailAddress</th>
-    <th>address</th>
-    <th>city</th>
-  </tr>
-  <tr>
-    <td><a href="#" onClick="updatePerson('this.personID')">Edit</a></td>
-    <td><a href="#" onclick="deletePerson('this.personID')">Delete</a></td>
-    <td align="right" >1000</td>
-    <td >Jack</td>
-    <td align="right" >Spring</td>
-    <td>JackSprin23g@hello.com</td>
-    <td>123NW lane dr</td>
-    <td>Corvilals</td>
-  </tr>
-  <tr>
-    <td><a href="#" onClick="updatePerson('this.personID')">Edit</a></td>
-    <td><a href="#" onclick="deletePerson('this.personID')">Delete</a></td>
-    <td align="right" >1001</td>
-    <td >Alice</td>
-    <td align="right" >Summer</td>
-    <td>AliceSummer@helllo.com</td>
-    <td>sw ln dr 1256</td>
-    <td>Salem</td>
-  </tr>
-  <tr>
-    <td><a href="#" onClick="updatePerson('this.personID')">Edit</a></td>
-    <td><a href="#" onclick="deletePerson('this.personID')">Delete</a></td>
-    <td align="right" >1002</td>
-    <td >Iris</td>
-    <td align="right" >Winter</td>
-    <td>IrisWinter@hello.com</td>
-    <td>420 Database Cr</td>
-    <td>Portland</td>
-  </tr>
-</table>
-<p>&nbsp;</p>
-</div> 
+    <table border="1" cellpadding="5">
+      <tr>
+        <th><a href="#" onClick="newPerson()">New</a></th>
+        <th></th>
+        <th>customerID</th>
+        <th>firstName</th>
+        <th>lastName</th>
+        <th>emailAddress</th>
+        <th>address</th>
+        <th>city</th>
+      </tr>
+      <tr>
+        <td><a href="#" onClick="updatePerson('this.personID')">Edit</a></td>
+        <td><a href="#" onclick="deletePerson('this.personID')">Delete</a></td>
+        <td align="right" >1000</td>
+        <td >Jack</td>
+        <td align="right" >Spring</td>
+        <td>JackSprin23g@hello.com</td>
+        <td>123NW lane dr</td>
+        <td>Corvilals</td>
+      </tr>
+      <tr>
+        <td><a href="#" onClick="updatePerson('this.personID')">Edit</a></td>
+        <td><a href="#" onclick="deletePerson('this.personID')">Delete</a></td>
+        <td align="right" >1001</td>
+        <td >Alice</td>
+        <td align="right" >Summer</td>
+        <td>AliceSummer@helllo.com</td>
+        <td>sw ln dr 1256</td>
+        <td>Salem</td>
+      </tr>
+      <tr>
+        <td><a href="#" onClick="updatePerson('this.personID')">Edit</a></td>
+        <td><a href="#" onclick="deletePerson('this.personID')">Delete</a></td>
+        <td align="right" >1002</td>
+        <td >Iris</td>
+        <td align="right" >Winter</td>
+        <td>IrisWinter@hello.com</td>
+        <td>420 Database Cr</td>
+        <td>Portland</td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+  </div> 
 
 <div id="insert">
   <form method="POST" id="addPlanet">
