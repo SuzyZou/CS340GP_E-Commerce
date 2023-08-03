@@ -3,6 +3,7 @@
 
 <head>
 <title>Customers</title>
+<h1> Customers</h1>
 <link href="style.css" rel="stylesheet" type="text/css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,11 +52,11 @@
   function browsePeople() { showform ('browse'); }
   function showAll() { showform ('all'); }
 </script>
+
 </head>
 
 
 <body onload="browsePeople()">
-  <h1> Customers</h1>
   <nav>
     <a href="../index.html">Home</a>
     <a href="customers.html">Customers</a>
@@ -65,7 +66,8 @@
     <a href="categories.html">Categories</a>
   </nav>
   <div id="browse">
-<p><a href="#" onClick="showAll()">Display all forms</a> </p>
+<p> <a href="#" onClick="showAll()">Display all forms</a> 
+</p>
 <table border="1" cellpadding="5">
   <tr>
     <th><a href="#" onClick="newPerson()">New</a></th>
@@ -159,16 +161,10 @@
 </div><!-- delete -->
 
 
-
-
-
-
-
-
-
-
 </body>
 
-
+<footer>
+  <p>2023©Max Zimmer & Suzy Zou (Ya Zou)<br>
+</footer>
 
 </html>
