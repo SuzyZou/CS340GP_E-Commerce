@@ -128,7 +128,13 @@
   <form method="POST" id="addPlanet">
       <legend><strong>Add Review</strong></legend>
         <fieldset class="fields">
-          <label> customerID </label> <input type="text" name="firstName">
+          <label><strong>CustomerID:</strong></label> <select name ="customerID">
+            <option value="0">&nbsp;</option>
+           <option value="1">1000</option>
+           <option value="2">1001</option>
+           <option value="3">1002</option>
+         </select>
+     </label> 
           <label> overall Rating </label> <input type="text" name="firstName">
           <label> feedback </label> <input type="text" name="lname">
         
@@ -143,7 +149,15 @@
   <form method="POST" id="addPlanet">
       <legend><strong>Update Review</strong></legend>
         <fieldset class="fields">
-          <label> customerID </label> <input type="text" name="firstName">
+          <label><strong>CustomerID:</strong></label> <select name ="customerID">
+            <option value="0">&nbsp;</option>
+           <option value="1">1000</option>
+           <option value="2">1001</option>
+           <option value="3">1002</option>
+         </select>
+     </label> 
+       
+         </select>
           <label> overall Rating </label> <input type="text" name="firstName">
           <label> feedback </label> <input type="text" name="lname">
     </fieldset>
@@ -159,7 +173,7 @@
           <fieldset class="fields">
           <p>Are you sure you wish to delete the following?</p>
           <input type="hidden" name="personID" id="deletepersonID" value="1">
-          <label><strong>reviewID:</strong> <select name ="customerID">
+          <label><strong>reviewID:</strong></label> <select name ="customerID">
             <option value="0">&nbsp;</option>
            <option value="1">30</option>
            <option value="2">31</option>

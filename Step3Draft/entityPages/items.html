@@ -96,7 +96,7 @@
     <td><a href="#" onClick="updatePerson('this.personID')">Edit</a></td>
     <td><a href="#" onclick="deletePerson('this.personID')">Delete</a></td>
     <td align="right" >2</td>
-    <td align="right" >32</td>
+    <td align="right" >31</td>
     <td align="right" >501</td>
     <td align="right" >phone</td>
     <td align="right" >$629</td>
@@ -106,7 +106,7 @@
     <td><a href="#" onClick="updatePerson('this.personID')">Edit</a></td>
     <td><a href="#" onclick="deletePerson('this.personID')">Delete</a></td>
     <td align="right" >3</td>
-    <td align="right" >31</td>
+    <td align="right" >32</td>
     <td align="right" >502</td>
     <td align="right" >laptop</td>
     <td align="right" >$999</td>
@@ -119,7 +119,15 @@
   <form method="POST" id="addPlanet">
       <legend><strong>Add Item</strong></legend>
         <fieldset class="fields">
-          <label> reviewID </label> <input type="text" name="reviewID">
+          <label><strong>reviewID:</strong> </label><select name ="customerID">
+            <option value="0">&nbsp;</option>
+            <option value="1">33</option>
+            <option value="2">34</option>
+            <option value="3">35</option>
+           <option value="4">36</option>
+           <option value="5">37</option>
+           <option value="6">38</option>
+         </select>
           <label> itemName </label> <input type="text" name="itemName">
           <label> price</label> <input type="text" name="price">
     </fieldset>
@@ -131,31 +139,37 @@
 <!-- this section is for update a customer  -->
 <div id="update">
   <form method="POST" id="addPlanet">
-      <legend><strong>Update Item</strong></legend>
-        <fieldset class="fields">
-          <label> reviewID </label> <input type="text" name="reviewID">
-          <label><strong>itemName:</strong> <select name ="customerID">
-            <option value="0">&nbsp;</option>
-           <option value="1">ipads</option>
-           <option value="2">phones</option>
-           <option value="3">laptops</option>
-         </select>
-     </label> 
-          <label> price</label> <input type="text" name="lname">
-    </fieldset>
-        <input class="btn" type="submit" id="addPerson" value="Update Item">
-        <input class="btn" type="button" value="cancel" onClick="browsePeople()">
+    <legend><strong>Update Item</strong></legend>
+      <fieldset class="fields">
+        <label><strong>reviewID:</strong> </label><select name ="customerID">
+          <option value="0">&nbsp;</option>
+          <option value="1">30</option>
+          <option value="2">31</option>
+          <option value="3">32</option>
+     
+       </select>
+       <label><strong>itemName:</strong> </label><select name ="customerID">
+        <option value="0">&nbsp;</option>
+        <option value="1">phone</option>
+        <option value="2">ipad</option>
+        <option value="3">laptop</option>
+   
+     </select>
+        <label> price</label> <input type="text" name="price">
+  </fieldset>
+      <input class="btn" type="submit" id="addPerson" value="Add Item">
+      <input class="btn" type="button" value="cancel" onClick="browsePeople()">
 </form> 
-</div><!-- insert -->
+</div><!-- update -->
 
 <!-- this  is for delete a person -->
 <div id="delete" style="display: block">
   <form method="POST" id="deletePerson">
-      <legend><strong>Delete Item</strong></legend>
+      <lable><strong>Delete Item</strong></lable></legend>
           <fieldset class="fields">
           <p>Are you sure you wish to delete the following?</p>
           <input type="hidden" name="personID" id="deletepersonID" value="1">
-          <label><strong>Item ID:</strong> <select name ="customerID">
+          <label><strong>Item ID</strong></label> <select name ="customerID">
             <option value="0">&nbsp;</option>
            <option value="1">1</option>
            <option value="2">2</option>

@@ -72,7 +72,7 @@ set address = :address_input
 where customerID  = :customerID_input_dropdown;
 
 
-#filter Reviews
+-- filter Reviews
 
 select * from Reviews 
 where overallRating >= :overallRating_input_dropdown

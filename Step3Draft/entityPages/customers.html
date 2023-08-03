@@ -126,7 +126,7 @@
   <form method="POST" id="addPlanet">
       <legend><strong>Add Customer</strong></legend>
         <fieldset class="fields">
-          <label> customer ID </label> <input type="text" name="customerID">
+          <label> first name </label> <input type="text" name="firstName">
           <label> first name </label> <input type="text" name="firstName">
           <label> last name </label> <input type="text" name="lname">
           <label> email address </label> <input type="text" name="emailaddr">
@@ -136,19 +136,25 @@
         <input class="btn" type="submit" id="addPerson" value="Add Customer">
         <input class="btn" type="button" value="cancel" onClick="browsePeople()">
 </form> 
-</div><!-- insert -->
+</div>
 
 <!-- this section is for update a customer  -->
 <div id="update">
   <form method="POST" id="addPlanet">
       <legend><strong>Update Customer</strong></legend>
-        <fieldset class="fields">
-          <label> customer ID </label> <input type="text" name="customerID">
-          <label> first name </label> <input type="text" name="firstName">
-          <label> last name </label> <input type="text" name="lname">
-          <label> email address </label> <input type="text" name="emailaddr">
-          <label> address </label> <input type="text" name="address">
-          <label> city </label> <input type="text" name="city">
+        <fieldset class="fields"> 
+          <label> Customer ID </label> <select name="homeworld">
+            <option value="0">&nbsp;</option>
+              <option value="1">1000</option>
+              <option value="2">1001</option>
+              <option value="3">1002</option>
+              </select>
+          <label> first name </label> <input type="text" name="lname">   </label>
+          <label> last name </label> <input type="text" name="lname">   </label>
+          <label> city </label> <input type="text" name="city"></input>  </label>
+          <label> email address </label> <input type="text" name="emailaddr">  </label>
+          <label> address </label> <input type="text" name="address">   </label>
+          
     </fieldset>
         <input class="btn" type="submit" id="addPerson" value="Update Customer">
         <input class="btn" type="button" value="cancel" onClick="browsePeople()">
@@ -162,7 +168,7 @@
           <fieldset class="fields">
           <p>Are you sure you wish to delete the following?</p>
           <input type="hidden" name="personID" id="deletepersonID" value="1">
-          <label><strong>CustomerID:</strong> <select name ="customerID">
+          <label><strong>CustomerID:</strong> </label><select name ="customerID">
                  <option value="0">&nbsp;</option>
                 <option value="1">1000</option>
                 <option value="2">1001</option>

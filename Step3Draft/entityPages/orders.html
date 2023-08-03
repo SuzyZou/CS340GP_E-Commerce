@@ -72,7 +72,6 @@
     <a href="#" id="displayAllForms" onClick="showAll()" class="circular-button">All Forms</Form></a>
   </div>
 
-
   <div id="browse">
 <table border="1" cellpadding="5">
   <tr>
@@ -95,7 +94,7 @@
     <td align="right" >1234567</td>
     <td align="right" >2021-02-16</td>
     <td align="right" >2</td>
-    <td align="right" >1628</td>
+    <td align="right" >$1628</td>
   </tr>
   <tr>
     <td><a href="#" onClick="updatePerson('this.personID')">Edit</a></td>
@@ -106,7 +105,7 @@
     <td align="right" >1234567</td>
     <td align="right" >2021-02-16</td>
     <td align="right" >2</td>
-    <td align="right" >1628</td>
+    <td align="right" >$1628</td>
   </tr>
   <tr>
     <td><a href="#" onClick="updatePerson('this.personID')">Edit</a></td>
@@ -117,7 +116,7 @@
     <td align="right" >1234568</td>
     <td align="right" >2023-04-13</td>
     <td align="right" >1</td>
-    <td align="right" >629</td>
+    <td align="right" >$629</td>
   </tr>
   <tr>
     <td><a href="#" onClick="updatePerson('this.personID')">Edit</a></td>
@@ -128,7 +127,7 @@
     <td align="right" >1234569</td>
     <td align="right" >2021-09-07</td>
     <td align="right" >1</td>
-    <td align="right" >729</td>
+    <td align="right" >$729</td>
   </tr>
 </table>
 <p>&nbsp;</p>
@@ -138,8 +137,17 @@
   <form method="POST" id="addPlanet">
       <legend><strong>Add Order</strong></legend>
         <fieldset class="fields">
-          <label> customer ID </label> <input type="text" name="customerID">
-          <label for = 'orderDate'> Order date: </label> <input type="date"name="firstName">
+          <label><strong>CustomerID</strong> </label><select name ="customerID">
+            <option value="0">&nbsp;</option>
+            <option value="1">1000</option>
+            <option value="2">1001</option>
+            <option value="3">1002</option>
+           <option value="4">1003</option>
+           <option value="5">1004</option>
+           <option value="6">1005</option>
+         </select>
+     </label> 
+          <label for = 'orderDate'> Order date</label> <input type="date"name="firstName">
           <label> Credit card number </label> <input type="text" name="lname">
           <label for = 'orderDate'> Credit card expire date </label> <input type="date"name="firstName">
           <label> Number of Ordered Items </label> <input type="text" name="address">
@@ -153,19 +161,26 @@
 <!-- this section is for update a customer  -->
 <div id="update">
   <form method="POST" id="addPlanet">
-      <legend><strong>Update Order</strong></legend>
-        <fieldset class="fields">
-          <label> customer ID </label> <input type="text" name="customerID">
-          <label for = 'birthday'> order Date: </label> <input type="date"name="firstName">
-          <label> creditCardNumb </label> <input type="text" name="lname">
-          <label> creditCardExpNumb </label> <input type="text" name="emailaddr">
-          <label> NumbOrderedItems </label> <input type="text" name="address">
-          <label> pricePaid </label> <input type="text" name="city">
+      <legend><strong>Update Customer</strong></legend>
+        <fieldset class="fields"> 
+          <label> Customer ID </label> <select name="homeworld">
+            <option value="0">&nbsp;</option>
+              <option value="1">1000</option>
+              <option value="2">1001</option>
+              <option value="3">1002</option>
+              </select>
+              <label for = 'orderDate'> Order date</label> <input type="date"name="firstName">
+              <label> Credit card number </label> <input type="text" name="lname">
+              <label for = 'orderDate'> Credit card expire date </label> <input type="date"name="firstName">
+              <label> Number of Ordered Items </label> <input type="text" name="address">
+              <label> Price paid </label> <input type="text" name="city">
+          
     </fieldset>
-        <input class="btn" type="submit" id="addPerson" value="Update Order">
+        <input class="btn" type="submit" id="addPerson" value="Update Customer">
         <input class="btn" type="button" value="cancel" onClick="browsePeople()">
 </form> 
 </div><!-- insert -->
+
 
 <!-- this  is for delete a person -->
 <div id="delete" style="display: block">
@@ -173,7 +188,7 @@
       <legend><strong>Delete Order</strong></legend>
           <fieldset class="fields">
           <p>Are you sure you wish to delete the following?</p>
-          <label><strong>Order ID:</strong> <select name ="customerID">
+          <label><strong>Order ID:</strong> </label><select name ="customerID">
             <option value="0">&nbsp;</option>
            <option value="1">10000</option>
            <option value="2">10001</option>
