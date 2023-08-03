@@ -55,14 +55,18 @@
 
 
 <body onload="browsePeople()">
-  <nav>
-    <a href="../index.html">Home</a>
-    <a href="customers.html">Customers</a>
-    <a href="orders.html">Orders</a>
-    <a href="items.html">Items</a>
-    <a href="reviews.html">Reviews</a>
-    <a href="categories.html">Categories</a>
-  </nav>
+  <head class="h">
+    <nav class="navbar">
+        <ul class = "navlist">
+            <li class = "home"><a href="../index.html">Home</a> </li>
+            <li class = "add_item_link"><a href="./customers.html">Customers</a></li>
+            <li class = "add_order_link"><a href = "./orders.html">Orders</a></li>
+            <li class = "add_order_link"><a href = "./items.html">Items</a></li> 
+            <li class = "add_order_link"><a href = "./reviews.html">Reviews</a></li>
+            <li class = "add_order_link"><a href = "./categories.html">Categories</a></li>
+        </ul>
+    </nav>
+  </head>
   <div id="browse">
 <p><a href="#" onClick="showAll()">Display all forms</a> </p>
 <table border="1" cellpadding="5">

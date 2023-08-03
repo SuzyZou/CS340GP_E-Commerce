@@ -32,11 +32,11 @@ a{
 }
 
   a:hover, a:focus {
-    color: #167bd3e7;
+    background-color: #303F61;
   }
   
   a:focus {
-    outline:  #167bd3e7;
+      background-color: #303F61;
   }
   
  
