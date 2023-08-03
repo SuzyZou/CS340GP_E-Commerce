@@ -386,3 +386,8 @@ li{
   outline: none;
   background-color: #94A4B4;
 }
+
+.search_bar{
+  position: relative;
+  top: 5px;
+}

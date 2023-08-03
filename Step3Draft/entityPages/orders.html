@@ -55,6 +55,7 @@
 
 
 <body onload="browsePeople()">
+  
   <head class="h">
     <nav class="navbar">
         <ul class = "navlist">
@@ -64,9 +65,14 @@
             <li class = "add_order_link"><a href = "./items.html">Items</a></li> 
             <li class = "add_order_link"><a href = "./reviews.html">Reviews</a></li>
             <li class = "add_order_link"><a href = "./categories.html">Categories</a></li>
+            <div class="search_bar">
+
+              <input type="text" placeholder="Search..">
+            </div>
         </ul>
     </nav>
   </head>
+
 
   <div class="button-container">
     <a href="#" id="displayAllForms" onClick="showAll()" class="circular-button">All Forms</Form></a>
@@ -200,7 +206,6 @@
           <input class="btn" type="button" value="cancel" onClick="browsePeople()">
   </form> 
 </div><!-- delete -->
-
 
 </body>
 
